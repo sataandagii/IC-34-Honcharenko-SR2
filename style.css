@@ -1,0 +1,92 @@
+/*всі елементи р у пункті 1.1 будуть стилізовані наступно*/
+
+div#p1 {
+    p{
+        text-align: center;
+        color: red;
+    }
+  }
+
+div#p2{
+    p.center {
+        text-align: center;
+        color: red;
+      }
+} 
+
+div#p4{
+    background-color: lightblue;
+    p.opct{
+        opacity: 0.4;
+    }
+}
+
+div#p6{
+    p {
+        margin: 25px 50px 75px 100px;
+      }
+}
+
+div#p8{
+    p {
+        padding: 50px 100px 20px 70px;
+      }
+}
+
+div#p9{
+    #hght{
+        height: 200px;
+        width: 50%;
+        background-color: powderblue;
+    }
+}
+
+div#p10 {
+    width: 300px;
+    border: 15px solid green;
+   padding: 50px;
+   margin: 20px;
+  }
+
+div#p12{
+    a:link {
+        background-color: yellow;
+      }
+      
+      a:visited {
+        background-color: cyan;
+      }
+      
+      a:hover {
+        background-color: lightgreen;
+      }
+      
+      a:active {
+        background-color: hotpink;
+      } 
+}
+
+div#p13{
+    ul#out {
+        list-style-position: outside;
+      }
+    ul#in {
+        list-style-position: inside;
+      }
+}
+
+div#p14{
+    div#first{
+        table, th, td {
+            border: 1px solid black;
+        }
+    }
+    div#second{
+        table {
+            width: 100%;
+          }
+          table, th, td {
+            border: 1px solid black;
+        }
+    }
+}
