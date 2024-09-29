@@ -1,17 +1,13 @@
 /*всі елементи р у пункті 1.1 будуть стилізовані наступно*/
 
-div#p1 {
-    p{
+div#p1 p{
         text-align: center;
         color: red;
-    }
   }
 
-div#p2{
-    p.center {
+div#p2 p.center{
         text-align: center;
         color: red;
-      }
 } 
 
 div#p4{
@@ -21,24 +17,18 @@ div#p4{
     }
 }
 
-div#p6{
-    p {
+div#p6 p{
         margin: 25px 50px 75px 100px;
-      }
 }
 
-div#p8{
-    p {
-        padding: 50px 100px 20px 70px;
-      }
+div#p8 p{
+        padding: 50px 100px 20px 70px; 
 }
 
-div#p9{
-    #hght{
+div#p9 #hght{
         height: 200px;
         width: 50%;
         background-color: powderblue;
-    }
 }
 
 div#p10 {
@@ -49,7 +39,7 @@ div#p10 {
   }
 
 div#p12{
-    a:link {
+      a:link {
         background-color: yellow;
       }
       
@@ -75,7 +65,7 @@ div#p13{
       }
 }
 
-div#p14{
+div#p14 {
     div#first{
         table, th, td {
             border: 1px solid black;
@@ -87,6 +77,268 @@ div#p14{
           }
           table, th, td {
             border: 1px solid black;
+            text-align: center;
         }
     }
+}
+
+div#p21 p{
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    background: #e6ff8c;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+
+@keyframes example {
+  0%   {background-color:rgb(153, 0, 255); left:0px; top:0px;}
+  25%  {background-color:rgb(47, 0, 255); left:100px; top:0px;}
+  50%  {background-color:rgb(0, 162, 255); left:100px; top:25px;}
+  75%  {background-color:rgb(0, 255, 242); left:0px; top:25px;}
+  100% {background-color:rgb(0, 255, 162); left:0px; top:0px;}
+}
+div#p22 div{
+  
+    width: 25px;
+    height: 25px;
+    background-color: rgb(153, 0, 255);
+    animation-name: example;
+    position: relative;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+div#p23{
+  text-align: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+div#p24{
+  #color{ background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  #size{
+    background-color: #80d3ee; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  #round{
+    background-color: #f996c4; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  #hvr{
+    background-color: white; 
+    border: 2px solid #fa4949;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  #hvr:hover{
+    background-color: #fa4949;
+    color: white;
+  }
+}
+
+div#p25{
+  .pgn a{
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+  }
+  .pgn a.active{
+      background-color: #6dc8d5;
+      color: white;
+  }
+  .pgn a:hover:not(.active) {
+    background-color: #ddd;
+  }
+}
+
+div#p26{
+  width:50%;
+  .nws{
+    column-count: 3;
+    column-rule-width: 3px;
+    column-rule-style: solid;
+    column-rule-color: rgb(255, 100, 100);
+  }
+}
+
+div#p27{
+  .dropbtn{
+    background:#74d8e8;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border:none;
+    cursor:pointer;
+  }
+
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content{
+    display:none;
+    position: absolute;
+    background-color:#f9f9f9;
+    min-width:160px;
+    z-index:1;
+  }
+
+  .dropdown-content a{
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #66b7c4;
+  }
+}
+
+div#p28{
+  div#back{
+    background-image: url(back.jpg);
+    height: 120px;
+    p{
+      border: 2px solid black;
+      padding: 15px;
+    }
+  }
+}
+
+div#p29{
+  h2{
+    text-shadow: 2px 2px 5px rgb(141, 255, 240);
+  }
+
+ 
+}
+
+div#p210{
+  button{
+    color:rgb(97, 95, 95);
+    background-color: white;
+    border: 2px solid rgb(197, 196, 196); 
+    font-size: 16px;
+    padding: 15px 32px;
+    border-radius: 30px;
+  }
+
+  button:hover{
+    box-shadow: 0px 0px 10px rgb(141, 255, 240);
+  }
+
+  div.polaroid {
+    margin-top: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  
+  div.container {
+    padding: 10px;
+  }
+}
+
+div#trns{
+  width: 100px;
+  height: 100px;
+  background: rgb(163, 207, 255);
+  transition: width 2s;
+}
+
+div#trns:hover {
+  width: 300px;
+}
+
+div.test{
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden; 
+  border: 1px solid #000000;
+}
+
+div.test:hover {
+  overflow: visible;
+}
+
+p.test1 {
+  width: 140px; 
+  border: 1px solid #000000;
+  word-break: keep-all;
+}
+
+p.test2 {
+  writing-mode: vertical-rl; 
 }
